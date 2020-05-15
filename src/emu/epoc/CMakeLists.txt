@@ -69,10 +69,13 @@ add_library(epockern
 add_library(epocmem
     include/epoc/mem.h
     include/epoc/mem/allocator/std_page_allocator.h
+    include/epoc/mem/model/flexible/chunk.h
+    include/epoc/mem/model/flexible/mmu.h
+    include/epoc/mem/model/flexible/process.h
     include/epoc/mem/model/multiple/chunk.h
     include/epoc/mem/model/multiple/mmu.h
     include/epoc/mem/model/multiple/process.h
-    include/epoc/mem/model/multiple/section.h
+    include/epoc/mem/model/section.h
     include/epoc/mem/chunk.h
     include/epoc/mem/common.h
     include/epoc/mem/mmu.h
@@ -80,6 +83,9 @@ add_library(epocmem
     include/epoc/mem/process.h
     src/mem.cpp
     src/mem/allocator/std_page_allocator.cpp
+    src/mem/model/flexible/chunk.cpp
+    src/mem/model/flexible/mmu.cpp
+    src/mem/model/flexible/process.cpp
     src/mem/model/multiple/chunk.cpp
     src/mem/model/multiple/mmu.cpp
     src/mem/model/multiple/process.cpp
